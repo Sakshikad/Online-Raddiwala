@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+    --primary-color: #4fb355;
+    --secondary-color: #327c44;
+    --text-color: #333;
+    --background-color: #fff;
+    --gray-color: #f8f9fa;
+    --dark-gray: #666;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* input */
+.form-control:focus {
+    border-color: #4fb355 !important;
+    box-shadow: none !important;
+  }
+
+/* Home Page */
+.main-container {
+    background-color: var(--background-color);
+    padding: 60px 12%;
+    text-align: center;
+    background-image: url('../images/tree.png'); 
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 90vh 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-tagline {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Service Section */
+.service-style {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+/* Card Section */
+.rate-style {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.rate-card {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.rate-card h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+td {
+    background-color: var(--background-color);
+}
+
+tr:nth-child(even) td {
+    background-color: var(--gray-color);
+}
+
+.note {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--dark-gray);
+}
+
+/* Contribution Section */
+.contribution-section {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.contribution-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.contribution-section p,
+.contribution-section li {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-gray);
+}
+
+.contribution-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contribution-section ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: start;
+}
+
+.contribution-section ul li i {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.contribution-section .image-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contribution-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* About Us Section */
+.services-section {
+    padding: 50px 0;
+    background-color: var(--background-color);
+}
+
+.services-section .service-card {
+    margin-bottom: 30px;
+}
+
+.services-section .service-icon {
+    margin-bottom: 20px;
+}
+
+.services-section .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color)
+}
+.services-section .card-text {
+    font-size: 16px;
+    color: var(--dark-gray);
+    }
+
+
+/* footer */
+.footer-style {
+    padding: 50px 0;
+    background-color: var(--gray-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.footer-style h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-style p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.contact-info p i:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--background-color);
+    color: var(--background-color);
+}
+/* counter */
+
+.counts {
+    padding: 60px 0;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+}
+
+.counts .counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.counts .col {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.counts .col span {
+    font-size: 56px;
+    display: block;
+    font-weight: 600;
+}
+
+.counts .col p {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.counts .col .purecounter {
+    display: inline-block;
+    margin-bottom: 5px;
+}
